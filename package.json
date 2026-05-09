@@ -1,0 +1,35 @@
+{
+  "name": "mongodb-query-analyzer",
+  "version": "1.0.0",
+  "description": "CLI tool for analyzing MongoDB query performance",
+  "main": "dist/index.js",
+  "bin": {
+    "mqa": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Lint not configured\"",
+    "package": "pkg dist/cli/index.js -o bin/mqa"
+  },
+  "keywords": ["mongodb", "query", "performance", "analyzer", "cli"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/node": "^25.6.2",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "commander": "^14.0.3",
+    "fast-csv": "^5.0.7",
+    "fs-extra": "^11.3.5",
+    "glob": "^13.0.6",
+    "handlebars": "^4.7.9",
+    "ora": "^5.4.1",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4"
+  }
+}

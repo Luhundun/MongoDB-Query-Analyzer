@@ -1,0 +1,43 @@
+{
+  "queryPlanner": {
+    "namespace": "test.users",
+    "indexFilterSet": false,
+    "parsedQuery": {
+      "status": {
+        "$eq": "active"
+      }
+    },
+    "winningPlan": {
+      "stage": "COLLSCAN",
+      "filter": {
+        "status": {
+          "$eq": "active"
+        }
+      },
+      "direction": "forward"
+    },
+    "rejectedPlans": []
+  },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 50,
+    "executionTimeMillis": 245,
+    "totalKeysExamined": 0,
+    "totalDocsExamined": 10000,
+    "executionStages": {
+      "stage": "COLLSCAN",
+      "nReturned": 50,
+      "executionTimeMillisEstimate": 240,
+      "works": 10002,
+      "advanced": 50,
+      "docsExamined": 10000,
+      "direction": "forward"
+    }
+  },
+  "serverInfo": {
+    "host": "localhost",
+    "port": 27017,
+    "version": "5.0.0",
+    "gitVersion": "unknown"
+  }
+}

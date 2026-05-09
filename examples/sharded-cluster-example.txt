@@ -1,0 +1,37 @@
+{ 
+  queryPlanner: { 
+    mongosPlannerVersion: 1, 
+    winningPlan: { 
+      stage: "SINGLE_SHARD", 
+      shards: [...] 
+    } 
+  }, 
+  executionStats: { 
+    nReturned: 784, 
+    executionTimeMillis: 87, 
+    totalKeysExamined: 37695, 
+    totalDocsExamined: 37695, 
+    executionStages: { 
+      stage: "SINGLE_SHARD", 
+      nReturned: 784, 
+      executionTimeMillis: 87, 
+      totalKeysExamined: 37695, 
+      totalDocsExamined: 37695, 
+      totalChildMillis: "86", 
+      shards: [...] 
+    } 
+  }, 
+  ok: 1, 
+  operationTime: "7637792414660296706", 
+  $clusterTime: { 
+    clusterTime: "7637792418955264002", 
+    signature: { 
+<<<<<<< HEAD
+      hash: "SGyZuo1Vpn8w2Tx8tNjujvy70Lw=", 
+=======
+      hash: "SGyZuo1Vpn8wzTx8tNjujvy70Lw=", 
+>>>>>>> 34b5e6a (v0.0.1)
+      keyId: "7617680732080570369" 
+    } 
+  } 
+}

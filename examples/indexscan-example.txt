@@ -1,0 +1,60 @@
+{
+  "queryPlanner": {
+    "namespace": "test.orders",
+    "indexFilterSet": false,
+    "parsedQuery": {
+      "userId": {
+        "$eq": 12345
+      }
+    },
+    "winningPlan": {
+      "stage": "FETCH",
+      "inputStage": {
+        "stage": "IXSCAN",
+        "keyPattern": {
+          "userId": 1
+        },
+        "indexName": "userId_1",
+        "direction": "forward",
+        "indexBounds": {
+          "userId": ["[12345, 12345]"]
+        }
+      }
+    },
+    "rejectedPlans": []
+  },
+  "executionStats": {
+    "executionSuccess": true,
+    "nReturned": 25,
+    "executionTimeMillis": 12,
+    "totalKeysExamined": 25,
+    "totalDocsExamined": 25,
+    "executionStages": {
+      "stage": "FETCH",
+      "nReturned": 25,
+      "executionTimeMillisEstimate": 10,
+      "works": 26,
+      "advanced": 25,
+      "docsExamined": 25,
+      "inputStage": {
+        "stage": "IXSCAN",
+        "nReturned": 25,
+        "executionTimeMillisEstimate": 5,
+        "works": 26,
+        "advanced": 25,
+        "keysExamined": 25,
+        "indexName": "userId_1",
+        "keyPattern": {
+          "userId": 1
+        },
+        "direction": "forward"
+      }
+    }
+  },
+  "serverInfo": {
+    "host": "localhost",
+    "port": 27017,
+    "version": "5.0.0",
+    "gitVersion": "unknown"
+  }
+}

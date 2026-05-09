@@ -1,0 +1,5 @@
+└─ COLLSCAN 
+   ├─ nReturned: 1000
+   ├─ docsExamined: 50000
+   ├─ executionTimeMillisEstimate: 450
+   └─ direction: forward
