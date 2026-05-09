@@ -39,3 +39,6 @@ logs/
 
 # OS files
 Thumbs.db
+
+# trae files
+.trae/
