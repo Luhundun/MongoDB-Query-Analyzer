@@ -14,8 +14,6 @@ A professional CLI tool that parses non-standard MongoDB explain outputs (like t
 - [命令文档 / Command Documentation](#命令文档--command-documentation)
 - [示例 / Examples](#示例--examples)
 - [开发 / Development](#开发--development)
-- [贡献 / Contributing](#贡献--contributing)
-- [许可证 / License](#许可证--license)
 
 ## 特性 / Features
 
@@ -238,20 +236,3 @@ npm run build
 node dist/cli/index.js analyze examples/collscan-example.txt
 ```
 
-## 贡献 / Contributing
-
-欢迎提交 Issue 和 Pull Request！
-
-Issues and Pull Requests are welcome!
-
-1. Fork 本仓库 / Fork this repository
-2. 创建特性分支 / Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 / Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 / Push to the branch (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request / Open a Pull Request
-
-## 许可证 / License
-
-MIT License - 详见 [LICENSE](LICENSE) 文件
-
-MIT License - see [LICENSE](LICENSE) file for details
